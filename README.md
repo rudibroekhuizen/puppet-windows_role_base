@@ -19,15 +19,11 @@ This module will apply the windows_base module. Userdata is in this module.
 
 ## Module Description
 
-If applicable, this section should have a brief description of the technology
-the module integrates with and what that integration enables. This section
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?"
-
-If your module has a range of functionality (installation, configuration,
-management, etc.) this is the time to mention it.
+This module will set up your Windows box in next to no time. It will install your favorite software, as defined in a yaml file. It will also create local users.
 
 ## Setup
+
+
 
 ### What windows_role_base affects
 
