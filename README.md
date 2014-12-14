@@ -39,7 +39,7 @@ etc.), mention it here.
 
 ### Beginning with windows_role_base
 
-Create a file called Bootstrap.bat. Paste the content of the following file in it and run the batch script as administrator: https://raw.githubusercontent.com/rudibroekhuizen/puppet-windows_role_base/master/files/Bootstrap.bat.
+Go to C:\Windows\Temp. Create a file called Bootstrap.bat. Paste the content of the following file in it and run the batch script as administrator: https://raw.githubusercontent.com/rudibroekhuizen/puppet-windows_role_base/master/files/Bootstrap.bat.
 
 ## Usage
 
