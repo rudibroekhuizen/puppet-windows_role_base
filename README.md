@@ -55,7 +55,11 @@ with things. (We are working on automating this section!)
 
 ## Limitations
 
-This is where you list OS compatibility, version compatibility, etc.
+Tested on:
+* Windows 7
+* Windows 2008 R2
+* Windows 8.1
+* Windows 2012 R2
 
 ## Development
 
