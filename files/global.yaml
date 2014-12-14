@@ -1,0 +1,35 @@
+windows_role_base::packages_attribute_defaults:
+  ensure:   installed
+  provider: chocolatey
+  
+windows_role_base::packages_hash:
+  git:
+    ensure: latest
+  puppet:
+    ensure: latest
+  vim:
+    {}
+  putty:
+    {}
+  powershell:
+    {}
+  7zip:
+    {}
+  wget:
+    {}
+  procexp:
+    {}
+
+windows_role_base::users_attribute_defaults:
+  ensure: present
+  
+windows_role_base::users_hash:
+  rudi.broekhuizen:
+    comment:  'Rudi Broekhuizen'
+    password: 'Passw0rd'
+    groups:   'Administrators'
+  
+  nico.muusse:
+    comment:  'Nico Muusse'
+    password: 'Passw0rd'
+    groups:   'Administrators'

@@ -1,0 +1,28 @@
+# Installs from the puppet forge
+mod "rismoney/chocolatey"
+mod "badgerious/windows_env"
+
+# Installs from git
+mod 'windows_base',
+:git => 'https://github.com/naturalis/puppet-windows_base'
+
+mod 'windows_role_base',
+:git => 'https://github.com/naturalis/puppet-windows_role_base'
+
+mod 'windows_oradb',
+:git => 'https://github.com/naturalis/puppet-windows_oradb'
+
+mod 'windows_role_oradb',
+:git => 'https://github.com/naturalis/puppet-windows_role_oradb'
+
+#mod 'topdesk',
+#:git => 'https://github.com/rudibroekhuizen/puppet-topdesk'
+
+#mod 'role_topdesk',
+#:git => 'https://github.com/rudibroekhuizen/puppet-role_topdesk'
+
+mod 'windows_logstash',
+:git => 'https://github.com/rudibroekhuizen/puppet-windows_logstash'
+
+mod 'windows_role_logstash',
+:git => 'https://github.com/rudibroekhuizen/puppet-windows_role_logstash'

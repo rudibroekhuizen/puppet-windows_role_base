@@ -1,0 +1,14 @@
+windows_role_base::packages_hash:
+  googlechrome:
+    ensure: latest
+
+windows_role_base::users_hash:
+  ad.ministrator:
+    comment:  'Ad Ministrator'
+    password: 'Passw0rd'
+    groups:   'Administrators'
+  
+  rudi.broekhuizen:
+    comment:  'Rudi Broekhuizen'
+    password: 'Passw0rd'
+    groups:   'Administrators'
