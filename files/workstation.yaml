@@ -1,11 +1,9 @@
 windows_role_base::packages_hash:
-  notepadplusplus.install:
+  powershell:
     ensure: latest
   vim:
     {}
   putty:
-    {}
-  powershell:
     {}
   7zip:
     {}
