@@ -15,7 +15,7 @@ windows_role_base::packages_hash:
     {}
   google-chrome-x64:
     {}
-  adobereader
+  adobereader:
     {}
   flashplayerplugin:
     {}
