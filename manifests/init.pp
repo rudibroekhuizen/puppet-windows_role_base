@@ -29,7 +29,7 @@
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Rudi Broekhuizen <rudi.broekhuizen@naturalis.nl>
 #
 # === Copyright
 #
