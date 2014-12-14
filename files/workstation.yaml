@@ -18,7 +18,6 @@ windows_role_base::packages_hash:
   flashplayerplugin:
     {}
 
-
 windows_role_base::users_hash:
   ad.ministrator:
     comment:  'Ad Ministrator'
