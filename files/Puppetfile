@@ -4,10 +4,10 @@ mod "badgerious/windows_env"
 
 # Installs from git
 mod 'windows_base',
-:git => 'https://github.com/naturalis/puppet-windows_base'
+:git => 'https://github.com/rudibroekhuizen/puppet-windows_base'
 
 mod 'windows_role_base',
-:git => 'https://github.com/naturalis/puppet-windows_role_base'
+:git => 'https://github.com/rudibroekhuizen/puppet-windows_role_base'
 
 mod 'windows_oradb',
 :git => 'https://github.com/naturalis/puppet-windows_oradb'
