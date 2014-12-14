@@ -3,9 +3,7 @@ windows_role_base::packages_attribute_defaults:
   provider: chocolatey
   
 windows_role_base::packages_hash:
-  git:
-    ensure: latest
-  puppet:
+  notepadplusplus:
     ensure: latest
   vim:
     {}
