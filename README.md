@@ -41,6 +41,8 @@ etc.), mention it here.
 
 Open command prompt as administrator. Go to C:\Windows\Temp. Create a file called Bootstrap.bat. Paste the content of the following file in it and run it! https://raw.githubusercontent.com/rudibroekhuizen/puppet-windows_role_base/master/files/Bootstrap.bat.
 
+You can create your own .yaml file, and define your users and packages. Run the script, use the name of your file as the first argument, like this: "Boostrap.bat workstation". It will use the workstation.yaml file as data_source.
+
 ## Usage
 
 Put the classes, types, and resources for customizing, configuring, and doing
