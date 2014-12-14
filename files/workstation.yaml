@@ -1,6 +1,25 @@
 windows_role_base::packages_hash:
-  googlechrome:
+  notepadplusplus.install:
     ensure: latest
+  vim:
+    {}
+  putty:
+    {}
+  powershell:
+    {}
+  7zip:
+    {}
+  wget:
+    {}
+  procexp:
+    {}
+  google-chrome-x64:
+    {}
+  adobereader
+    {}
+  flashplayerplugin:
+    {}
+
 
 windows_role_base::users_hash:
   ad.ministrator:
