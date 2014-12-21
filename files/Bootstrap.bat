@@ -30,7 +30,7 @@ rem Install r10k
 call gem.bat install r10k
 
 rem Download Puppetfile
-call curl -k https://raw.githubusercontent.com/naturalis/puppet-windows_role_base/master/files/Puppetfile > %PuppetPath%\Puppetfile
+call curl -k https://raw.githubusercontent.com/rudibroekhuizen/puppet-windows_role_base/master/files/Puppetfile > %PuppetPath%\Puppetfile
 
 rem Run r10k to download modules
 cd %PuppetPath%
