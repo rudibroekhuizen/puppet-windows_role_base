@@ -16,6 +16,7 @@ rem Set Puppet and Ruby path, get this from Start Command Prompt with Puppet, ec
 call SET PATH=%PATH%;C:\Program Files\Puppet Labs\Puppet\puppet\bin;C:\Program Files\Puppet Labs\Puppet\facter\bin;C:\Program Files\Puppet Labs\Puppet\hiera\bin;C:\Program Files\Puppet Labs\Puppet\bin;C:\Program Files\Puppet Labs\Puppet\sys\ruby\bin;C:\Program Files\Puppet Labs\Puppet\sys\tools\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\Puppet Labs\Puppet\bin 
 
 rem Create custom fact to set data source (hiera yaml file)
+rem SET FACTER_env_windows_installdir=%PL_BASEDIR%
 call puppet apply -e "file { 'c:/ProgramData/PuppetLabs/facter/facts.d/data_source.txt': content => 'data_source=%1' }"
 
 rem Install GeoTrust certificate to download modules from Puppetforge, see https://docs.puppetlabs.com/windows/troubleshooting.html#error-messages
