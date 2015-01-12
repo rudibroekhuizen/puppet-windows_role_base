@@ -17,6 +17,8 @@ windows_role_base::packages_hash:
     {}
   flashplayerplugin:
     {}
+  imageresizerapp:
+    {}
 
 windows_role_base::users_hash:
   ad.ministrator:
