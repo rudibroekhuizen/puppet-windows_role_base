@@ -43,11 +43,11 @@ class windows_role_base (
   ) {
 
 
-  class {'windows_base':
-    packages_attribute_defaults = $packages_attribute_defaults,
-    packages_hash               = $packages_hash,
-    users_attribute_defaults    = $users_attribute_defaults,
-    users_hash                  = $users_hash,
+  class { 'windows_base':
+    packages_attribute_defaults => $packages_attribute_defaults,
+    packages_hash               => $packages_hash,
+    users_attribute_defaults    => $users_attribute_defaults,
+    users_hash                  => $users_hash,
   }
 
 }
