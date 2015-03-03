@@ -36,51 +36,18 @@
 # Copyright 2014 Your name here, unless otherwise noted.
 #
 class windows_role_base (
-  $packages_attribute_defaults = { ensure   => installed,
-                                   provider => chocolatey,
-                                 },
-
-  $packages_hash = { 'puppet' => { ensure   => latest,
-                                   provider => chocolatey,
-                                 },
-
-                     'git'    => { ensure   => latest,
-                                   provider => chocolatey, 
-                                 },
-
-                   },
-              
-  $users_attribute_defaults = { ensure => present,
-                              },
-                             
-  $users_hash = { 'rudi.broekhuizen' => { comment  => 'Rudi Broekhuizen',
-                                          password => 'Passw0rd',
-                                          #email   => 'rudi.broekhuizen@naturalis.nl',
-                                          groups   => ['Administrators'],
-                                        }
-                },
+  $packages_attribute_defaults = undef,
+  $packages_hash               = undef,
+  $users_attribute_defaults    = undef,
+  $users_hash                  = undef, 
   ) {
 
-# General configuration
-  class {'windows_base::config':
-  }
 
-# Install files
-  class {'windows_base::files':
-    require => Class["windows_base::config"],
-  }
-
-# Install packages
-  class {'windows_base::packages':
-    packages_hash               => $packages_hash,
+  class { 'windows_base':
     packages_attribute_defaults => $packages_attribute_defaults,
-    require                     => Class["windows_base::files"],
+    packages_hash               => $packages_hash,
+    users_attribute_defaults    => $users_attribute_defaults,
+    users_hash                  => $users_hash,
   }
 
-# Install users
-  class {'windows_base::users':
-    users_hash               => $users_hash,
-    users_attribute_defaults => $users_attribute_defaults,
-    require                  => Class["windows_base::packages"],
-  }
 }
