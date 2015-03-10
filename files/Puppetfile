@@ -1,6 +1,7 @@
 # Installs from the puppet forge
 mod "rismoney/chocolatey"
 mod "badgerious/windows_env"
+mod "opentable/download_file"
 
 # Installs from git
 mod 'windows_base',
