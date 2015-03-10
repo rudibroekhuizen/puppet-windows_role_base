@@ -27,3 +27,6 @@ mod 'windows_logstash',
 
 mod 'windows_role_logstash',
 :git => 'https://github.com/rudibroekhuizen/puppet-windows_role_logstash'
+
+mod 'windows_burp',
+:git => 'https://github.com/rudibroekhuizen/puppet-windows_burp'
