@@ -2,6 +2,7 @@
 mod "rismoney/chocolatey"
 mod "badgerious/windows_env"
 mod "opentable/download_file"
+mod "counsyl/windows"
 
 # Installs from git
 mod 'windows_base',
