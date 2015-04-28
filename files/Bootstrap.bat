@@ -8,7 +8,7 @@ call cmd /c @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex (
 
 rem Install packages
 call cinst poshgit
-call cinst puppet
+call cinst puppet -version 3.7.5
 call cinst curl
 call cinst wget
 
