@@ -7,10 +7,10 @@ rem Install Chocolatey, get this script from https://chocolatey.org/
 call cmd /c @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 
 rem Install packages
-call cinst poshgit
-call cinst puppet -version 3.7.5
-call cinst curl
-call cinst wget
+call choco install poshgit
+call choco install puppet -version 3.7.5
+call choco install curl
+call choco install wget
 
 rem Set Puppet and Ruby path, get this from Start Command Prompt with Puppet, echo %path% > path.txt
 call SET PATH=%PATH%;C:\Program Files\Puppet Labs\Puppet\puppet\bin;C:\Program Files\Puppet Labs\Puppet\facter\bin;C:\Program Files\Puppet Labs\Puppet\hiera\bin;C:\Program Files\Puppet Labs\Puppet\bin;C:\Program Files\Puppet Labs\Puppet\sys\ruby\bin;C:\Program Files\Puppet Labs\Puppet\sys\tools\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Git\cmd;C:\Program Files\Puppet Labs\Puppet\bin 
