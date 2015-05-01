@@ -25,7 +25,7 @@ call certutil -addstore Root GeoTrust_Global_CA.pem
 
 rem Install AddTrust certificate, see https://gist.github.com/luislavena/f064211759ee0f806c88
 call wget --no-check-certificate https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/AddTrustExternalCARoot-2048.pem
-call copy AddTrustExternalCARoot-2048.pem "C:\Program Files\Puppet Labs\Puppet\sys\ruby\lib\ruby\2.0.0\rubygems\ssl_certs"
+call copy AddTrustExternalCARoot-2048.pem "C:\Program Files\Puppet Labs\Puppet\sys\ruby\lib\ruby\2.1.0\rubygems\ssl_certs"
 
 rem Install r10k
 call gem.bat install r10k
