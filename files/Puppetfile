@@ -5,6 +5,7 @@ mod "opentable/download_file"
 mod "counsyl/windows"
 mod "puppetlabs/stdlib"
 mod "puppetlabs/powershell"
+mod "puppetlabs/registry"
 
 # Installs from git
 mod 'windows_base',
