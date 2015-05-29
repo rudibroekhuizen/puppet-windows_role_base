@@ -1,4 +1,4 @@
-windows_role_oradb::installdb_hash:
+windows_oradb::installdb_hash:
   nbcacpp:
     version:        '11.2.0.3'
     installFolder:  'C:/Install'
@@ -15,7 +15,7 @@ windows_role_oradb::installdb_hash:
     oracleBase:     'C:\Oracle_Sys\nbcprod'
     databaseType:   'SE'
   
-windows_role_oradb::database_hash:
+windows_oradb::database_hash:
   nbcacce:
     oracleHome:     'C:\Oracle_Sys\nbcacpp\product\11.2\db'    
     oracleBase:     'C:\Oracle_Sys\nbcacpp'    
@@ -38,7 +38,7 @@ windows_role_oradb::database_hash:
     sysPassword:    'Passw0rd'
     systemPassword: 'Passw0rd'
     
-windows_role_oradb::net_hash:
+windows_oradb::net_hash:
   nbcacpp:
     oracleHome:        'C:\Oracle_Sys\nbcacpp\product\11.2\db'    
     oracleBase:        'C:\Oracle_Sys\nbcacpp'    
