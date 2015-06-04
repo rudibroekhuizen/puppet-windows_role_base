@@ -10,4 +10,4 @@ windows_role_base::users_hash:
 
 windows_role_logstash::configfile_hash:
   logstash-win-eventlog-20.conf:
-    source: 'puppet:///modules/windows_role_base/logstash-win-eventlog-20.conf'
+    source: 'puppet:///modules/windows_role_logstash/logstash-win-eventlog-20.conf'
