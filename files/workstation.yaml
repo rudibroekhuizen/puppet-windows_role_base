@@ -51,7 +51,7 @@ windows_burp::burp_hash:
     value: '[A-Z]:/RECYCLER'
     section: 'RECYCLER'
   
-  exclude_regex
+  exclude_regex:
     value: '[A-Z]:/pagefile.sys'
     section: 'pagefile.sys'
   
