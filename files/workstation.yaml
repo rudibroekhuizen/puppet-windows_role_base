@@ -21,12 +21,40 @@ windows_role_base::packages_hash:
     {}
 
 windows_role_base::users_hash:
-  ad.ministrator:
-    comment:  'Ad Ministrator'
-    password: 'Passw0rd'
-    groups:   'Administrators'
-  
   rudi.broekhuizen:
     comment:  'Rudi Broekhuizen'
     password: 'Passw0rd'
     groups:   'Administrators'
+
+windows_burp::burp_hash:
+  include:
+    value: 'C:/Documents and Settings'
+    secion: 'C:/Documents and Settings'
+    
+  exclude_regex:
+    value: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
+    section: 'AppData/Local/Temp'
+  
+  exclude_regex:
+    value: '[A-Z]:/Documents and Settings/[^/]+/Cookies'
+    secion: 'Cookies'
+    
+  exclude_regex:
+    value: '[A-Z]:/Documents and Settings/[^/]+/Recent'
+    secion: 'Recent'
+    
+  exclude_regex:
+    value: '[A-Z]:/Documents and Settings/[^/]+/Local Settings/Temp'
+    section: 'Local Settings/Temp'
+   
+  exclude_regex: 
+    value: '[A-Z]:/RECYCLER'
+    section: 'RECYCLER'
+  
+  exclude_regex
+    value: '[A-Z]:/pagefile.sys'
+    section: 'pagefile.sys'
+  
+  exclude_regex:
+    value: '[A-Z]:/swapfile.sys'
+    section: 'swapfile.sys'
