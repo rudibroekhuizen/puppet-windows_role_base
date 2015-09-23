@@ -8,7 +8,7 @@ call cmd /c @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex (
 
 rem Install packages
 call choco install poshgit
-call choco install puppet -version 3.7.5
+call choco install puppet -version 3.8.3
 call choco install curl
 call choco install wget
 
