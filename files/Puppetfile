@@ -3,11 +3,20 @@
 #mod "badgerious/windows_env"
 #mod "opentable/download_file"
 #mod "counsyl/windows"
-mod "puppetlabs/stdlib"
-mod "puppetlabs/powershell"
-mod "puppetlabs/registry"
+#mod "puppetlabs/stdlib"
+#mod "puppetlabs/powershell"
+#mod "puppetlabs/registry"
 
 # Installs from git
+mod 'registry',
+:git => 'https://github.com/puppetlabs/puppetlabs-registry'
+
+mod 'powershell',
+:git => 'https://github.com/puppetlabs/puppetlabs-powershell'
+
+mod 'stdlib',
+:git => 'https://github.com/puppetlabs/puppetlabs-stdlib'
+
 mod 'chocolatey',
 :git => 'https://github.com/chocolatey/puppet-chocolatey'
 
