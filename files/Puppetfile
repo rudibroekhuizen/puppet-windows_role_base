@@ -1,13 +1,22 @@
 # Installs from the puppet forge
-mod "chocolatey/chocolatey"
-mod "badgerious/windows_env"
-mod "opentable/download_file"
-mod "counsyl/windows"
+#mod "chocolatey/chocolatey"
+#mod "badgerious/windows_env"
+#mod "opentable/download_file"
+#mod "counsyl/windows"
 mod "puppetlabs/stdlib"
 mod "puppetlabs/powershell"
 mod "puppetlabs/registry"
 
 # Installs from git
+mod 'chocolatey',
+:git => 'https://github.com/chocolatey/puppet-chocolatey'
+
+mod 'download_file',
+:git => 'https://github.com/puppet-community/puppet-download_file'
+
+mod 'windows',
+:git => 'https://github.com/counsyl/puppet-windows'
+
 mod 'windows_base',
 :git => 'https://github.com/rudibroekhuizen/puppet-windows_base'
 
