@@ -1,13 +1,3 @@
-# Installs from the puppet forge
-#mod "chocolatey/chocolatey"
-#mod "badgerious/windows_env"
-#mod "opentable/download_file"
-#mod "counsyl/windows"
-#mod "puppetlabs/stdlib"
-#mod "puppetlabs/powershell"
-#mod "puppetlabs/registry"
-
-# Installs from git
 mod 'registry',
 :git => 'https://github.com/puppetlabs/puppetlabs-registry'
 
