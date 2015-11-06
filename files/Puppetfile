@@ -13,6 +13,9 @@ mod 'chocolatey',
 mod 'download_file',
 :git => 'https://github.com/puppet-community/puppet-download_file'
 
+mod 'inifile',
+:git => 'https://github.com/puppetlabs/puppetlabs-inifile'
+
 mod 'windows',
 :git => 'https://github.com/counsyl/puppet-windows'
 
