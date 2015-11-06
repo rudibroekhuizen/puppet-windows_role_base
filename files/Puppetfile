@@ -36,7 +36,7 @@ mod 'windows_role_oradb',
 
 mod 'windows_logstash',
 :git    => 'https://github.com/rudibroekhuizen/puppet-windows_logstash',
-:branch => "develop"
+#:branch => "develop"
 
 mod 'windows_role_logstash',
 :git => 'https://github.com/rudibroekhuizen/puppet-windows_role_logstash'
