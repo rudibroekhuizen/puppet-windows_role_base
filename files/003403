@@ -1,0 +1,58 @@
+classes:
+  - windows_role_base
+
+windows_role_base::packages_hash:
+  powershell:
+    ensure: latest
+  vim:
+    {}
+  putty:
+    {}
+  7zip:
+    {}
+  wget:
+    {}
+  procexp:
+    {}
+  google-chrome-x64:
+    {}
+  adobereader:
+    {}
+  flashplayerplugin:
+    {}
+  imageresizerapp:
+    {}
+  greenshot:
+    {}
+
+
+windows_role_logstash::configfile_hash:
+  logstash-win-eventlog-20.conf:
+    source: puppet:///modules/windows_role_logstash/logstash-win-eventlog-20.conf
+
+windows_role_base::users_hash:
+  rudi.broekhuizen:
+    comment:  'Rudi Broekhuizen'
+    password: 'Passw0rd'
+    groups:   'Administrators'
+
+windows_burp::burp_hash:
+  include:
+    value: 'C:/Users'
+    secion: 'C:/Users'
+    
+  exclude_regex:
+    value: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
+    section: 'AppData/Local/Temp'
+  
+  exclude_regex:
+    value: '[A-Z]:/Users/[^/]+/Cookies'
+    secion: 'Cookies'
+    
+  exclude_regex:
+    value: '[A-Z]:/Users/[^/]+/Recent'
+    secion: 'Recent'
+    
+  exclude_regex:
+    value: '[A-Z]:/Users/[^/]+/Local Settings/Temp'
+    section: 'Local Settings/Temp'
