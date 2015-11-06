@@ -1,5 +1,5 @@
 classes:
-  - windows_role_base
+  - windows_burp
 
 windows_role_base::packages_hash:
   powershell:
