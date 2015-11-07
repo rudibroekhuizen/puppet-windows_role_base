@@ -34,7 +34,7 @@ windows_role_base::users_hash:
 windows_burp::burp_hash:
   include:
     value: 'C:/Users'
-    secion: 'C:/Users'
+    section: 'C:/Users'
     
   exclude_regex:
     value: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
@@ -42,11 +42,11 @@ windows_burp::burp_hash:
   
   exclude_regex:
     value: '[A-Z]:/Users/[^/]+/Cookies'
-    secion: 'Cookies'
+    section: 'Cookies'
     
   exclude_regex:
     value: '[A-Z]:/Users/[^/]+/Recent'
-    secion: 'Recent'
+    section: 'Recent'
     
   exclude_regex:
     value: '[A-Z]:/Users/[^/]+/Local Settings/Temp'
