@@ -31,7 +31,27 @@ windows_role_base::users_hash:
     password: 'Passw0rd'
     groups:   'Administrators'
 
+windows_burp::burp_hash_defaults:
+  section_prefix: '#['
+  path: 'C:/Program Files/Burp/burp.conf'
+
 windows_burp::burp_hash:
+  '':
+    include: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
+      ensure: absent
+
+  rule-02:
+    include: 'C:/Users'
+    setting2: value2
+    setting3:
+      ensure: absent
+
+  rule-03:
+    exclude_regex: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
+    setting2: value2
+    setting3:
+      ensure: absent
+
   include:
     value: 'C:/Users'
     section: 'C:/Users'
