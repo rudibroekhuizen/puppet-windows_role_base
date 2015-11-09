@@ -1,5 +1,5 @@
 classes:
-  - windows_role_logstash
+  - windows_burp
 
 windows_role_base::packages_hash:
   powershell:
@@ -39,7 +39,7 @@ windows_burp::burp_hash_defaults:
 
 windows_burp::burp_hash:
   '':
-    include: 'C:/Users'
+    include:
       ensure: absent
 
   AppData/Local/Temp:
