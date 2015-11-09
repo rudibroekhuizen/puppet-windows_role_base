@@ -46,17 +46,14 @@ windows_burp::burp_hash:
     include: 'C:/Users'
       ensure: absent
 
-  rule-01:
-    include: 'C:/Users'
-
-  rule-02:
+  AppData/Local/Temp:
     exclude_regex: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
 
-  rule-03:
+  Cookies:
     exclude_regex: '[A-Z]:/Users/[^/]+/Cookies'
 
-  rule-04:
+  Recent:
     exclude_regex: '[A-Z]:/Users/[^/]+/Recent'
 
-  rule-05: 
+  Local Settings/Temp: 
     exclude_regex: '[A-Z]:/Users/[^/]+/Local Settings/Temp'
