@@ -1,10 +1,6 @@
 classes:
   - windows_role_logstash
 
-windows_role_base::packages_attribute_defaults:
-  ensure:   installed
-  provider: chocolatey
-
 windows_role_base::packages_hash:
   powershell:
     ensure: latest
