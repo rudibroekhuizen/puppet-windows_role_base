@@ -37,8 +37,8 @@ windows_burp::burp_hash_defaults:
 
 windows_burp::burp_hash:
   '':
-    include:
-      ensure: absent
+#   include:
+#     ensure: absent
     split_vss: 1
 
   AppData/Local/Temp:
