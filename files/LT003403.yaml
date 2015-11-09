@@ -37,37 +37,21 @@ windows_burp::burp_hash_defaults:
 
 windows_burp::burp_hash:
   '':
-    include: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
+    include: 'C:/Users'
       ensure: absent
+
+  rule-01:
+    include: 'C:/Users'
 
   rule-02:
-    include: 'C:/Users'
-    setting2: value2
-    setting3:
-      ensure: absent
+    exclude_regex: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
 
   rule-03:
-    exclude_regex: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
-    setting2: value2
-    setting3:
-      ensure: absent
+    exclude_regex: '[A-Z]:/Users/[^/]+/Cookies'
 
-  include:
-    value: 'C:/Users'
-    section: 'C:/Users'
-    
-  exclude_regex:
-    value: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
-    section: 'AppData/Local/Temp'
-  
-  exclude_regex:
-    value: '[A-Z]:/Users/[^/]+/Cookies'
-    section: 'Cookies'
-    
-  exclude_regex:
-    value: '[A-Z]:/Users/[^/]+/Recent'
-    section: 'Recent'
-    
-  exclude_regex:
-    value: '[A-Z]:/Users/[^/]+/Local Settings/Temp'
-    section: 'Local Settings/Temp'
+  rule-04:
+    exclude_regex: '[A-Z]:/Users/[^/]+/Recent'
+
+  rule-05: 
+    exclude_regex: '[A-Z]:/Users/[^/]+/Local Settings/Temp'
+   
