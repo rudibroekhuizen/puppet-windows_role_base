@@ -33,35 +33,26 @@ windows_role_base::users_hash:
     password: 'Passw0rd'
     groups:   'Administrators'
 
+windows_burp::burp_hash_defaults:
+  section_prefix: '#['
+  path: 'C:/Program Files/Burp/burp.conf'
+
 windows_burp::burp_hash:
-  include:
-    value: 'C:/Documents and Settings'
-    secion: 'C:/Documents and Settings'
-    
-  exclude_regex:
-    value: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
-    section: 'AppData/Local/Temp'
-  
-  exclude_regex:
-    value: '[A-Z]:/Documents and Settings/[^/]+/Cookies'
-    secion: 'Cookies'
-    
-  exclude_regex:
-    value: '[A-Z]:/Documents and Settings/[^/]+/Recent'
-    secion: 'Recent'
-    
-  exclude_regex:
-    value: '[A-Z]:/Documents and Settings/[^/]+/Local Settings/Temp'
-    section: 'Local Settings/Temp'
-   
-  exclude_regex: 
-    value: '[A-Z]:/RECYCLER'
-    section: 'RECYCLER'
-  
-  exclude_regex:
-    value: '[A-Z]:/pagefile.sys'
-    section: 'pagefile.sys'
-  
-  exclude_regex:
-    value: '[A-Z]:/swapfile.sys'
-    section: 'swapfile.sys'
+  '':
+    include: 'C:/Users'
+      ensure: absent
+
+  rule-01:
+    include: 'C:/Users'
+
+  rule-02:
+    exclude_regex: '[A-Z]:/Users/[^/]+/AppData/Local/Temp'
+
+  rule-03:
+    exclude_regex: '[A-Z]:/Users/[^/]+/Cookies'
+
+  rule-04:
+    exclude_regex: '[A-Z]:/Users/[^/]+/Recent'
+
+  rule-05: 
+    exclude_regex: '[A-Z]:/Users/[^/]+/Local Settings/Temp'
