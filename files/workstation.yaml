@@ -31,10 +31,6 @@ windows_role_base::users_hash:
     password: 'Passw0rd'
     groups:   'Administrators'
 
-windows_burp::burp_hash_defaults:
-  section_prefix: '#['
-  path: 'C:/Program Files/Burp/burp.conf'
-
 windows_burp::burp_hash:
   '':
 #   include:
