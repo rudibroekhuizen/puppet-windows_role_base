@@ -2,8 +2,8 @@ classes:
   - windows_burp
 
 windows_role_base::packages_hash:
-  powershell:
-    ensure: latest
+# powershell:
+#   ensure: latest
   vim:
     {}
   putty:
@@ -23,6 +23,8 @@ windows_role_base::packages_hash:
   imageresizerapp:
     {}
   greenshot:
+    {}
+  notepadplusplus:
     {}
 
 windows_role_base::users_hash:
