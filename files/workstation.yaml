@@ -40,10 +40,10 @@ windows_burp::burp_hash:
     split_vss: 1
 
   Default:
-    exclude_regex = "[A-Z]:/Users/Default"
+    exclude_regex: '[A-Z]:/Users/Default'
 
   Public:
-    exclude_regex = "[A-Z]:/Users/Public"
+    exclude_regex: '[A-Z]:/Users/Public'
 
   AppData:
     exclude_regex: '[A-Z]:/Users/[^/]+/AppData'
