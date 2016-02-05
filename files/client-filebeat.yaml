@@ -1,6 +1,12 @@
 classes:
   - filebeat
 
+windows_role_base::users_hash:
+  rudi.broekhuizen:
+    comment:  'Rudi Broekhuizen'
+    password: 'Passw0rd'
+    groups:   'Administrators'
+
 # Overrides for https://github.com/pcfens/puppet-filebeat
 filebeat::prospectors:
   syslogs:
