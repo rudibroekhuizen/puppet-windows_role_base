@@ -9,9 +9,10 @@ windows_role_base::users_hash:
 
 # Overrides for https://github.com/pcfens/puppet-filebeat
 filebeat::prospectors:
-  syslogs:
+  eventlog:
     paths:
       - 'C:/Windows/Temp/json_objects.json'
+    encoding: 'json'
     log_type: 'eventlog'
 
 filebeat::outputs:
