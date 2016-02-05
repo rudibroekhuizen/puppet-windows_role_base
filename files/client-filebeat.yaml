@@ -13,7 +13,7 @@ filebeat::prospectors:
     paths:
       - 'C:/Windows/Temp/json_objects.json'
     encoding: 'json'
-    log_type: 'eventlog'
+    doc_type: 'eventlog'
 
 filebeat::outputs:
   logstash:
