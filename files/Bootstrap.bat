@@ -29,7 +29,7 @@ rem call wget --no-check-certificate https://raw.githubusercontent.com/rubygems/
 rem call copy AddTrustExternalCARoot-2048.pem "C:\Program Files\Puppet Labs\Puppet\sys\ruby\lib\ruby\2.0.0\rubygems\ssl_certs"
 
 rem Install r10k
-call gem.bat install r10k
+call gem.bat install r10k --no-rdoc --no-ri
 
 rem Download Puppetfile
 call curl -k https://raw.githubusercontent.com/rudibroekhuizen/puppet-windows_role_base/master/files/Puppetfile > %PuppetPath%\Puppetfile
