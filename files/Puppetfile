@@ -47,5 +47,9 @@ mod 'windows_role_logstash',
 mod 'windows_burp',
 :git => 'https://github.com/rudibroekhuizen/puppet-windows_burp'
 
-mod 'puppet-filebeat',
+mod 'filebeat',
 :git => 'https://github.com/pcfens/puppet-filebeat'
+
+# Used by filebeat module:
+mod 'remote_file',
+:git => 'https://github.com/lwf/puppet-remote_file'
