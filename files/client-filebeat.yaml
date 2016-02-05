@@ -1,0 +1,14 @@
+classes:
+  - filebeat
+
+# Overrides for https://github.com/pcfens/puppet-filebeat
+filebeat::prospectors:
+  syslogs:
+    paths:
+      - 'C:/Windows/Temp/json_objects.json'
+    log_type: 'eventlog'
+
+filebeat::outputs:
+  logstash:
+    hosts:
+      - '172.16.1.25:5044'
