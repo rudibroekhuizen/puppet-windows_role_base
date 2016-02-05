@@ -46,3 +46,6 @@ mod 'windows_role_logstash',
 
 mod 'windows_burp',
 :git => 'https://github.com/rudibroekhuizen/puppet-windows_burp'
+
+mod 'puppet-filebeat',
+:git => 'https://github.com/pcfens/puppet-filebeat'
