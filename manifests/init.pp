@@ -35,19 +35,8 @@
 #
 # Copyright 2014 Your name here, unless otherwise noted.
 #
-class windows_role_base (
-  $packages_attribute_defaults = undef,
-  $packages_hash               = undef,
-  $users_attribute_defaults    = undef,
-  $users_hash                  = undef, 
-  ) {
+class windows_role_base {
 
-
-  class { 'windows_base':
-    packages_attribute_defaults => $packages_attribute_defaults,
-    packages_hash               => $packages_hash,
-    users_attribute_defaults    => $users_attribute_defaults,
-    users_hash                  => $users_hash,
-  }
+  include windows_base
 
 }
