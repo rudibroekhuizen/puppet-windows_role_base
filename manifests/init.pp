@@ -37,6 +37,4 @@
 #
 class windows_role_base {
 
-  include windows_base
-
 }
