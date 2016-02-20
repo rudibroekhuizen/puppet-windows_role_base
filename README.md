@@ -39,7 +39,12 @@ etc.), mention it here.
 
 ### Beginning with windows_role_base
 
-Open command prompt as administrator. Go to C:\Windows\Temp. Create a file called Bootstrap.bat. Paste the content of the following file in it and run it! https://raw.githubusercontent.com/rudibroekhuizen/puppet-windows_role_base/master/files/Bootstrap.bat.
+Start PowerShell and run:
+Invoke-WebRequest https://raw.githubusercontent.com/rudibroekhuizen/puppet-windows_role_base/master/files/Bootstrap.bat -OutFile "C:\Windows\Temp\Bootstrap.bat" | Out-Null; Start-Process C:\Windows\Temp\Bootstrap.bat
+
+Or open command prompt as administrator:
+
+Go to C:\Windows\Temp. Create a file called Bootstrap.bat. Paste the content of the following file in it and run it! https://raw.githubusercontent.com/rudibroekhuizen/puppet-windows_role_base/master/files/Bootstrap.bat.
 
 You can create your own .yaml file, and define your users and packages. Run the script, use the name of your file as the first argument, like this: "Boostrap.bat workstation". It will use the workstation.yaml file as data_source.
 
