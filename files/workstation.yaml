@@ -1,7 +1,7 @@
 classes:
   - windows_role_base::workstation
 
-windows_role_base::packages_hash:
+windows_base::packages_hash:
 # powershell:
 #   ensure: latest
   vim:
@@ -27,7 +27,7 @@ windows_role_base::packages_hash:
   notepadplusplus:
     {}
 
-windows_role_base::users_hash:
+windows_base::users_hash:
   rudi.broekhuizen:
     comment:  'Rudi Broekhuizen'
     password: 'Passw0rd'
