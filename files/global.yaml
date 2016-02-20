@@ -1,8 +1,8 @@
-windows_role_base::packages_attribute_defaults:
+windows_base::packages_attribute_defaults:
   ensure:   installed
   provider: chocolatey
   
-windows_role_base::packages_hash:
+windows_base::packages_hash:
   notepadplusplus:
     ensure: latest
   vim:
@@ -18,10 +18,10 @@ windows_role_base::packages_hash:
   procexp:
     {}
 
-windows_role_base::users_attribute_defaults:
+windows_base::users_attribute_defaults:
   ensure: present
   
-windows_role_base::users_hash:
+windows_base::users_hash:
   rudi.broekhuizen:
     comment:  'Rudi Broekhuizen'
     password: 'Passw0rd'
