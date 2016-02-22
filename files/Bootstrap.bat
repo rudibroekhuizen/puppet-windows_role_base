@@ -39,7 +39,7 @@ cd %PuppetPath%
 call r10k --verbose 3 puppetfile install
 
 rem Copy hiera.yaml (hiera config file)
-call copy %PuppetPath%\modules\windows_base\files\hiera.yaml C:\ProgramData\PuppetLabs\puppet\etc
+call copy C:\ProgramData\PuppetLabs\puppet\etc\modules\windows_base\files\hiera.yaml C:\ProgramData\PuppetLabs\puppet\etc
 
 rem Copy yaml files (userdata)
 call copy %PuppetPath%\modules\windows_role_base\files\*.yaml C:\ProgramData\PuppetLabs\hiera\var
