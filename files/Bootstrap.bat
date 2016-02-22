@@ -44,8 +44,5 @@ call copy %PuppetPath%\modules\windows_base\files\hiera.yaml C:\ProgramData\Pupp
 rem Copy yaml files (userdata)
 call copy %PuppetPath%\modules\windows_role_base\files\*.yaml C:\ProgramData\PuppetLabs\hiera\var
 
-rem Apply base module
+rem Apply base module and additional modules
 call puppet apply -e 'include windows_base' && puppet apply -e 'hiera_include('classes')'
-
-rem Apply additional modules
-rem puppet apply -e 'hiera_include('classes')'
