@@ -1,7 +1,7 @@
 classes:
   - filebeat
 
-windows_role_base::users_hash:
+windows_base::users_hash:
   rudi.broekhuizen:
     comment:  'Rudi Broekhuizen'
     password: 'Passw0rd'
