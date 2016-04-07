@@ -1,3 +1,6 @@
+classes:
+  - server-oracle
+
 windows_oradb::installdb_hash:
   nbcacpp:
     version:        '11.2.0.3'
