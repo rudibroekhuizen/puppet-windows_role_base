@@ -29,6 +29,7 @@ windows_oradb::database_hash:
     templateName:   'nbcacce.dbt'
     sysPassword:    'Passw0rd'
     systemPassword: 'Passw0rd'
+    totalMemory:    '5000'
     
   nbcprod:
     oracleHome:     'C:\Oracle_Sys\nbcprod\product\11.2\db'    
@@ -40,6 +41,7 @@ windows_oradb::database_hash:
     templateName:   'nbcprod.dbt'
     sysPassword:    'Passw0rd'
     systemPassword: 'Passw0rd'
+    totalMemory:    '20000'
     
 windows_oradb::net_hash:
   nbcacpp:
